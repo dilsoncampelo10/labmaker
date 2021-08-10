@@ -1,0 +1,88 @@
+@charset "UTF-8";
+body{
+    margin: 0;
+}
+/*Parte do cabeçalho, menu, etc*/
+.cabecalho{
+    display: flex;
+    height: 90vh;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: #CEE5F2;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+.menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1000px;
+}
+.menu ul{
+    display: flex;
+    list-style: none;
+}
+.menu ul li a{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: rgb(2, 1, 1);
+    padding: 20px;
+    font-size: 1.2rem;
+}
+.menu ul li a:hover{
+    color: #626C66;
+    text-decoration: underline;
+}
+/*Parte da seção, parte "principal"*/
+section#banner{
+    background-image: url("../imagens/labbanner01.jpg");
+    height: 120vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+}
+div#agrupamento{
+    width: 900px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+div#superior{
+    background-color: white;
+    margin-top:40px ;
+    padding: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.288);
+}
+div#inferior{
+    background-color: white;
+    display: flex;
+    
+}
+section#banner div#inferior div{
+    border: 1px solid rgba(0, 0, 0, 0.288);;
+    flex: 1;
+    padding: 10px;
+}
+/*Parte de baixo, rodapé*/
+.rodape{
+    background-color: #1F0318;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+}
+.rodape p,a{
+    color: white;
+    font-size: 1.2rem;
+}
+.rodape .ir_topo{
+    display: flex;
+    margin-right: 30px;
+    align-self: flex-end;
+}
