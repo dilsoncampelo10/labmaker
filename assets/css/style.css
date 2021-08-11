@@ -1,4 +1,7 @@
 @charset "UTF-8";
+*{
+    padding: 0;
+}
 body{
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
@@ -95,7 +98,16 @@ section#banner div#inferior div{
     font-size: 1.2rem;
 }
 .rodape .ir_topo{
+    font-size: 0.9rem;
     display: flex;
     margin-right: 30px;
     align-self: flex-end;
+    text-decoration: underline;
+    cursor: pointer;
+}
+/*Medias query's*/
+@media (min-width:700px) and (max-width: 1000px){
+    header{
+        background-color: red;
+    }
 }
