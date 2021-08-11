@@ -10,16 +10,23 @@
 <body>
     <header class="cabecalho">
         <div class="logo">
-            <img src="assets/imagens/campus.png" alt="">
+            <picture>
+                <source media="(max-width: 520px)" srcset="assets/imagens/campus-p.png">
+                <img src="assets/imagens/campus.png" alt="logo maker ip">
+            </picture>
         </div>
         <div class="menu">
             <nav>
                 <div class="botao_menu">
-                    <input type="checkbox" name="menbtn" id="btn_menu">
-                    <label for="btn_menu"><img src="assets/imagens/menu.png" alt="botão do menu"></label>
+                    <div class="btn_menu" onclick="mudarMenu()"> 
+                        <picture>
+                            <source media="(max-width: 520px)" srcset="assets/imagens/menu-p.png">
+                            <img src="assets/imagens/menu.png" alt="botão do menu">
+                        </picture>
+                    </div>
                 </div>
-                <ul>
-                    <li><a class="active"href="">Home</a></li>
+                <ul class="lista_menu">
+                    <li class="active"><a href="">Home</a></li>
                     <li><a href="">Divulgação</a>
                         <ul>
                             <li><a href="">Projetos</a></li>

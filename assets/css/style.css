@@ -23,9 +23,7 @@ body{
 }
 .active{
     background-color: #2667FF;
-}
-.botao_menu .btn_menu{
-    display: none;
+    
 }
 .botao_menu{
     display: none;
@@ -117,7 +115,7 @@ section#banner div#inferior div{
 @media (max-width:1000px){
     .cabecalho{
         width: auto;
-        height: 30vh;
+        height: 70vh;
     }
     .menu{
         width: auto;
@@ -126,7 +124,13 @@ section#banner div#inferior div{
         font-size: .8rem;
     }
     section#banner{
-        height: 90vh;
+        height: 100vh;
+       
+    }
+    div#agrupamento{
+        width: 100%;
+        align-items: center;
+        
     }
     div#superior{
         width: 500px;
@@ -138,9 +142,45 @@ section#banner div#inferior div{
 }
 @media (max-width:724px){
     .cabecalho{
-        background-color: red;
+        height: 50vh;
+    }
+    .menu{
+        display: flex;
+        align-items: flex-start;
+        
     }
     .botao_menu{
-        display: block;
+        display: flex;
+       
+    }
+    .active{
+        width: 100%;
+    }
+    .menu ul{
+        background-color: #CEE5F2;
+        position: absolute;
+        display: none;
+        flex-direction: column;
+        left: 0;
+        margin-top: 0;
+        width: 100%;
+    }
+    .menu ul li{
+        padding: 20px;
+    }
+    .menu ul li ul{
+        position: relative;
+    }
+}
+@media (max-width:520px){
+    *{
+        font-size: 12px;
+    }
+    section#banner{
+        height: 1000px;
+        
+    }
+    div#superior, div#inferior{
+        width: 20rem;
     }
 }
