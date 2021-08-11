@@ -10,6 +10,7 @@ body{
 .cabecalho{
     display: flex;
     height: 90vh;
+    width: auto;
     justify-content: center;
     flex-direction: column;
     align-items: center;
@@ -23,11 +24,17 @@ body{
 .active{
     background-color: #2667FF;
 }
+.botao_menu .btn_menu{
+    display: none;
+}
+.botao_menu{
+    display: none;
+}
 .menu{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 1000px;
+    width: auto;
 }
 .menu ul{
     display: flex;
@@ -58,13 +65,14 @@ body{
 section#banner{
     background-image: url("../imagens/labbanner01.jpg");
     height: 150vh;
+    width: auto;
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
     justify-content: center;
 }
 div#agrupamento{
-    width: 900px;
+    max-width: 900px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -91,7 +99,8 @@ section#banner div#inferior div{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 250px;
+    min-height: 250px;
+    width: auto;
 }
 .rodape p,a{
     color: white;
@@ -100,14 +109,38 @@ section#banner div#inferior div{
 .rodape .ir_topo{
     font-size: 0.9rem;
     display: flex;
-    margin-right: 30px;
-    align-self: flex-end;
+    align-self: center;
     text-decoration: underline;
     cursor: pointer;
 }
 /*Medias query's*/
-@media (min-width:700px) and (max-width: 1000px){
-    header{
+@media (max-width:1000px){
+    .cabecalho{
+        width: auto;
+        height: 30vh;
+    }
+    .menu{
+        width: auto;
+    }
+    .menu ul li a{
+        font-size: .8rem;
+    }
+    section#banner{
+        height: 90vh;
+    }
+    div#superior{
+        width: 500px;
+    }
+    div#inferior{
+        flex-direction: column;
+        width: 500px; 
+    }
+}
+@media (max-width:724px){
+    .cabecalho{
         background-color: red;
+    }
+    .botao_menu{
+        display: block;
     }
 }
