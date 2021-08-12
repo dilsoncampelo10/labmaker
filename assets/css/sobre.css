@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+section#meio{
+    display: flex;
+    height: 150vh;
+    width: auto;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+main#principal{
+    background-color: white;
+    padding: 10px;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+div#tit_principal{
+    flex: 1;
+}
+
+section#area_cont{
+    flex: 2;
+}
+.caixa{
+    border: 1px solid rgba(0, 0, 0, 0.205);
+    width: 50%;
+    padding: 5px;
+    margin-bottom: 50px;
+}
