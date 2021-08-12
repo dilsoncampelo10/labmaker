@@ -23,7 +23,6 @@ body{
 }
 .active{
     background-color: #2667FF;
-    
 }
 .botao_menu{
     display: none;
@@ -68,12 +67,15 @@ section#banner{
     background-size: cover;
     display: flex;
     justify-content: center;
+    padding: 80px;
 }
 div#agrupamento{
     max-width: 900px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    margin-bottom: 30px;
+    
 }
 div#superior{
     background-color: white;
@@ -99,6 +101,7 @@ section#banner div#inferior div{
     align-items: center;
     min-height: 250px;
     width: auto;
+   
 }
 .rodape p,a{
     color: white;
@@ -141,6 +144,9 @@ section#banner div#inferior div{
     }
 }
 @media (max-width:724px){
+    *{
+        font-size: 13px;
+    }
     .cabecalho{
         height: 50vh;
     }
@@ -152,9 +158,6 @@ section#banner div#inferior div{
     .botao_menu{
         display: flex;
        
-    }
-    .active{
-        width: 100%;
     }
     .menu ul{
         background-color: #CEE5F2;
@@ -171,6 +174,15 @@ section#banner div#inferior div{
     .menu ul li ul{
         position: relative;
     }
+    section#banner{
+        height: 600px;
+    }
+    div#superior, div#inferior{
+        font-size: 10px;
+        width: 500px;
+        margin: 5px;
+        justify-content: space-between;
+    }
 }
 @media (max-width:520px){
     *{
@@ -182,5 +194,6 @@ section#banner div#inferior div{
     }
     div#superior, div#inferior{
         width: 20rem;
+        justify-content: space-between;
     }
 }
