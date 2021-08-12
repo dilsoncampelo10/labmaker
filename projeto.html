@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <div class="logo">
+            <picture>
+                <source media="(max-width: 520px)" srcset="assets/imagens/campus-p.png">
+                <img src="assets/imagens/campus.png" alt="logo maker ip">
+            </picture>
+        </div>
+        <div class="menu">
+            <nav>
+                <div class="botao_menu">
+                    <div class="btn_menu" onclick="mudarMenu()"> 
+                        <picture>
+                            <source media="(max-width: 520px)" srcset="assets/imagens/menu-p.png">
+                            <img src="assets/imagens/menu.png" alt="botão do menu">
+                        </picture>
+                    </div>
+                </div>
+                <ul class="lista_menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active"><a href="">Divulgação</a>
+                        <ul>
+                            <li class="active"><a href="projeto.html">Projetos</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="tecnico.html">Seção técnica</a></li>
+                    <li><a href="dicas.html">Blog com dicas</a></li>
+                    <li ><a href="contato.html">Fale conosco</a></li>
+                    <li><a href="">Sobre</a>
+                        <ul>
+                            <li><a href="">Equipes</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <footer class="rodape">
+        <p>@LabMaker</p>
+        <p class="ir_topo" onclick="irTopo()">Ir para o topo</p>
+    </footer>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
