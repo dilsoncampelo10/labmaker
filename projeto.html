@@ -9,9 +9,22 @@
     <style>
         section#projetos{
             display: flex;
-            justify-content: space-around;
             flex-direction: column;
             align-items: center;
+            justify-content: center;
+            height: 150vh;
+        }
+        div#conjunto{
+            border: 1px solid #cecece;
+            display: flex;
+            width: 80%;
+            flex-direction: column;
+            align-items: center;
+            height: 90%;
+        }
+        table{
+            max-width: 100%;
+            max-height: 50%;
         }
          tr, td, th{
             border: 1px solid black;
@@ -19,6 +32,20 @@
         }
         div#definido{
             width: 80%;
+            
+        }
+        div#titulo{
+            margin-bottom: 50px;
+        }
+        @media(max-width:768px){
+            table, tr,td, th{
+                font-size: 10px;
+            }
+        }
+        @media(max-width:520px){
+            table, tr,td, th{
+                font-size: 4px;
+            }
         }
     </style>
 </head>
@@ -61,27 +88,28 @@
     </header>
 
     <section id="projetos">
-        <div id="titulo">
-            <h1>Projetos de pesquisa</h1>
-        </div>
-        <div id="definido">
-
-            <table>
-                <thead>
-                    <tr>
-                        <th>Tilulo</th>
-                        <th>Edital</th>
-                        <th>Resumo</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Desenvolvimento de protótipos para o ensino de matemática para deficientes visuais</td>
-                        <td>Edital nº 04/2020 - PROPI/RE/IFRN - Projetos de Pesquisa e Inovação com Fomento - Edital de Pesquisa</td>
-                        <td>O avanço da tecnologia tem permitido a criação de dispositivos eletrônicos cada vez mais sofisticados. Paralelo e também por consequência desse progresso, o conhecimento se tornou cada vez mais difundido e um reflexo dessa realidade é a cultura maker e o movimento "Do It Yourself". Esses movimentos propagaram diversas ideias e tecnologias, como a impressão 3D e o uso de roteadores de comando numérico computadorizado. De uma forma orgânica esses dispositivos foram aplicados ao contexto de sala de aula buscando mitigar dificuldades de aprendizagem e possibilitar a integração e desenvolvimento dos discentes. Esse projeto busca desenvolver dispositivos que auxiliem o ensino de matemática para os alunos com deficiência visual ou baixa visão. Esperamos ter como resultados, os dispositivos, roteiros e planos de aula. Em caso de um resultado positivo na etapa de validação, espera-se produzir kits e doar para as escolas municipais do município de Ipanguaçu.</td>
-                    </tr>
-                </tbody>
-            </table>
+        <div id="conjunto">
+            <div id="titulo">
+                <h1>Projetos de pesquisa</h1>
+            </div>
+            <div id="definido">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Tilulo</th>
+                            <th>Edital</th>
+                            <th>Resumo</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Desenvolvimento de protótipos para o ensino de matemática para deficientes visuais</td>
+                            <td>Edital nº 04/2020 - PROPI/RE/IFRN - Projetos de Pesquisa e Inovação com Fomento - Edital de Pesquisa</td>
+                            <td>O avanço da tecnologia tem permitido a criação de dispositivos eletrônicos cada vez mais sofisticados. Paralelo e também por consequência desse progresso, o conhecimento se tornou cada vez mais difundido e um reflexo dessa realidade é a cultura maker e o movimento "Do It Yourself". Esses movimentos propagaram diversas ideias e tecnologias, como a impressão 3D e o uso de roteadores de comando numérico computadorizado. De uma forma orgânica esses dispositivos foram aplicados ao contexto de sala de aula buscando mitigar dificuldades de aprendizagem e possibilitar a integração e desenvolvimento dos discentes. Esse projeto busca desenvolver dispositivos que auxiliem o ensino de matemática para os alunos com deficiência visual ou baixa visão. Esperamos ter como resultados, os dispositivos, roteiros e planos de aula. Em caso de um resultado positivo na etapa de validação, espera-se produzir kits e doar para as escolas municipais do município de Ipanguaçu.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
     </section>
 

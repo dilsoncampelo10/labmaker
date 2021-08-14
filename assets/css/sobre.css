@@ -24,7 +24,7 @@ section#area_cont{
     flex: 2;
 }
 .caixa{
-    border: 1px solid rgba(0, 0, 0, 0.205);
+    border: 1px solid #cecece;
     width: 50%;
     padding: 5px;
     margin-bottom: 50px;

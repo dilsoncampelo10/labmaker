@@ -6,6 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fale conosco</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        section#cont{
+            display: flex;
+            flex-direction: column;
+            height: 150vh;
+            width: 800px;
+        }
+        #title{
+            flex: 1;
+        }
+        #contatar{
+            flex: 2;
+            border: 1px solid black;
+        }
+    </style>
 </head>
 <body>
     <header class="cabecalho">
@@ -48,18 +63,22 @@
     <section id="cont">
         <div id="title">
             <h1>Contato</h1>
+            <p>Para qualquer dúvida, problema ou informação, nos comunique pelo E-mail abaixo:</p>
         </div>
         <div id="contatar">
             <main>
-                
+                <div id="email">
+                    [Email do lab]
+                </div>
             </main>
         </div>
-        <div id="redes">
-            <aside>
-
-            </aside>
-        </div>
+        
     </section>
+    <aside>
+        <div id="redes">
+           
+        </div>
+    </aside>
 
     <footer class="rodape">
         <p>@LabMaker</p>
