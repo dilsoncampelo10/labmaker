@@ -7,6 +7,36 @@
     <title>Equipes</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/sobre.css">
+    <style>
+        section#meio{
+            display: flex;
+            height: auto;
+            width: auto;
+            flex-direction: column;
+            justify-content: start;
+            align-items: center;
+        }
+        main#principal{
+            background-color: white;
+            padding: 10px;
+            width: 70%;
+            display: flex;
+            flex-direction: column;
+            margin-top: 20px;
+        }
+        div#tit_principal{
+            flex: 1;
+        }
+        section#area_cont{
+            flex: 2;
+        }
+        .caixa{
+            border: 1px solid var(--cor-sombr);
+            width: 50%;
+            padding: 5px;
+            margin-bottom: 50px;
+        }
+    </style>
 </head>
 <body>
     <header class="cabecalho">
@@ -47,36 +77,43 @@
     </header>
     
     <section id="meio">
-        <main id="principal">
-            <div id="tit_principal">
-                <h1>Equipes</h1>
-                <p>O projeto Maker ip conta com as seguintes pessoas abaixo</p>
+        <div class="contorno">
+            <div class="imagem-canto">
+                <img src="assets/imagens/equipe.png" alt="imagem de corrente">
             </div>
-            <section id="area_cont">
-                <div class="caixa">
-                    <h1>Adriano Soares</h1>
-                    <p>Possui Licenciatura Plena em Biologia e Matemática pela Faculdade de Formação de Professores de Belo Jardim (1993 e 1996), fez especialização em Programa de Ensino de Biologia pela Universidade de Pernambuco - UPE (1997), tem experiência na área de Ensino de Biologia e pesquisas na área de Entomologia Agrícola. Concluiu o Mestrado e Doutorado no Programa de Pós-Graduação em Fitotecnia (PPGF) da Universidade Federal Rural do Semi-Árido - UFERSA (2013 e 2017).</p>
+            <main id="principal">
+                <div id="tit_principal">
+                    <h1>Equipes</h1>
+                    <p>O projeto Maker ip conta com as seguintes pessoas abaixo</p>
                 </div>
-                <div class="caixa">
-                    <h1>Dilson Campêlo</h1>
-                    <p>Discente do curso técnico integrado em informática (2019)</p>
-                </div>
-                <div class="caixa">
-                    <h1>Ismael Vitor</h1>
-                    <p>Discente do curso técnico integrado em informática (2019)</p>
-                </div>
-                <div class="caixa">
-                    <h1>Jefferson Silva</h1>
-                    <p>lo</p>
-                </div>
-                <div class="caixa">
-                    <h1>Kassio Roberto</h1>
-                    <p>Professor de Língua Inglesa do Instituto Federal de Educação, Ciência e Tecnologia do Rio Grande do Norte (IFRN). Possui graduação em Letras com habilitação em Língua Inglesa e Literatura da Língua Inglesa (2002) e especialização em Ensino de Língua Inglesa (2008) pela Universidade do Estado do Rio Grande do Norte.</p>
-                </div>
-                <div class="caixa">
-                    <h1>Ozanira</h1>
-                    <p>lo</p>
-                </div>
+                <section id="area_cont">
+                    <div class="caixa">
+                        <h1>Adriano Soares</h1>
+                        <p>Possui Licenciatura Plena em Biologia e Matemática pela Faculdade de Formação de Professores de Belo Jardim (1993 e 1996).</p>
+                    </div>
+                    <div class="caixa">
+                        <h1>Dilson Campêlo</h1>
+                        <p>Discente do curso técnico integrado em informática (2019)</p>
+                    </div>
+                    <div class="caixa">
+                        <h1>Ismael Vitor</h1>
+                        <p>Discente do curso técnico integrado em informática (2019)</p>
+                    </div>
+                    <div class="caixa">
+                        <h1>Jefferson Silva</h1>
+                        <img src="assets/imagens/jeff.jpeg" alt="">
+                        <p>lo</p>
+                    </div>
+                    <div class="caixa">
+                        <h1>Kassio Roberto</h1>
+                        <img src="assets/imagens/kassio.jpg" alt="foto de kassio">
+                        <p>Professor de Língua Inglesa do Instituto Federal de Educação, Ciência e Tecnologia do Rio Grande do Norte (IFRN).</p>
+                    </div>
+                    <div class="caixa">
+                        <h1>Ozanira</h1>
+                        <p>lo</p>
+                    </div>
+        </div>
             </section>
         </main>
     </section>
