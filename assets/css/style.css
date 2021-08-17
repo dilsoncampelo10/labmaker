@@ -79,15 +79,15 @@ section#banner{
 }
 .imagem-canto{
     position: absolute;
-    right: 20px;
-    top: 600px;
+    right: 5%;
+    top: 100%;
 }
 .contorno{
     border: 1px solid var(--cor-sombr);
     box-shadow: 0px 0px 10px var(--cor-sombr);
     padding: 0px 50px;
     background-color: white;
-    width: 80%;
+    width: auto;
 }
 .meio{
     background-image: url(../imagens/labbanner02.jpg);
@@ -190,7 +190,7 @@ section#banner div#inferior div{
         width: 500px; 
     }
 }
-@media (max-width:724px){
+@media (max-width:1024px){
     *{
         font-size: 13px;
     }
@@ -230,6 +230,9 @@ section#banner div#inferior div{
         margin: 5px;
         justify-content: space-between;
     }
+    .imagem-canto{
+        display: none;
+    }
 }
 @media (max-width:520px){
     *{
@@ -245,5 +248,8 @@ section#banner div#inferior div{
     div#superior, div#inferior{
         width: 20rem;
         justify-content: space-between;
+    }
+    .imagem-canto{
+        display: none;
     }
 }
