@@ -87,7 +87,7 @@ section#banner{
     box-shadow: 0px 0px 10px var(--cor-sombr);
     padding: 0px 50px;
     background-color: white;
-    width: auto;
+    width: 80%;
 }
 .meio{
     background-image: url(../imagens/labbanner02.jpg);
