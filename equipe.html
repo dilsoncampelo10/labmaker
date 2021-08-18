@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/sobre.css">
     <style>
-        
         main#principal{
             background-color: white;
             padding: 10px;
@@ -36,6 +35,24 @@
         }
         .caixa img{
             margin-right: 10px;
+        }
+        @media (max-width:789px){
+            .caixa{
+                width: 100%;
+            }
+            .caixa img, p{
+                height: 100px;
+                font-size:10px;
+            }
+          
+        }
+        @media (max-width:380px){
+           
+            .caixa img, p{
+                height: 70px;
+                font-size:7px;
+            }
+          
         }
     </style>
 </head>
@@ -95,10 +112,12 @@
                     </div>
                     <h1>Dilson Campêlo</h1>
                     <div class="caixa">
+                        <img src="assets/imagens/dilson.jpg" alt="foto de dilson">
                         <p>Discente do curso técnico integrado em informática no IFRN(2019), desenvolvedor web.</p>
                     </div>
                     <h1>Ismael Vitor</h1>
                     <div class="caixa">
+                        <img src="assets/imagens/ismael.jpeg" alt="foto de ismael">
                         <p>Discente do curso técnico integrado em informática no IFRN(2019), desenvolvedor de jogos.</p>
                     </div>
                     <h1>Jefferson Silva</h1>

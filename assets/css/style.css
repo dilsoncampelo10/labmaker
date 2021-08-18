@@ -233,6 +233,12 @@ section#banner div#inferior div{
     .imagem-canto{
         display: none;
     }
+    .titulo1{
+        font-size: 1.8rem;
+    }
+    .titulo2{
+        font-size: 0.9rem;
+    }
 }
 @media (max-width:520px){
     *{
@@ -251,5 +257,11 @@ section#banner div#inferior div{
     }
     .imagem-canto{
         display: none;
+    }
+    .titulo1{
+        font-size: 1.5rem;
+    }
+    .titulo2{
+        font-size: 0.6rem;
     }
 }
