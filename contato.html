@@ -7,19 +7,30 @@
     <title>Fale conosco</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <style>
-        section#cont{
+        body{
             display: flex;
+            flex-direction: column;
+        }
+        div#uniao{
+            display: flex;
+            align-self: center;
             flex-direction: column;
             margin-left: 20px;
             height: 150vh;
             width: 800px;
         }
+        #linha{
+            width: 100%;
+            height: 10px;
+            background-color: var(--cor-mud);
+        }
         #title{
-            flex: 1;
+           margin-bottom: 30px;
         }
         #contatar{
-            flex: 2;
             border: 1px solid black;
+            width: 50%;
+            height: 40%;
         }
     </style>
 </head>
@@ -61,25 +72,29 @@
         </div>
     </header>
 
-    <section id="cont">
-        <div id="title">
-            <h1>Contato</h1>
-            <p>Para qualquer dúvida, problema ou informação, nos comunique pelo E-mail abaixo:</p>
-        </div>
-        <div id="contatar">
-            <main>
-                <div id="email">
-                    [Email do lab]
+    <div id="unicao" class="contorno">
+        <section id="cont">
+            <div id="conjemail">
+                <div id="title">
+                    <h1 class="titulo1">Contato</h1>
+                    <p class="titulo2">Para qualquer dúvida, problema ou informação, nos comunique pelo E-mail abaixo:</p>
                 </div>
-            </main>
-        </div>
+                <div id="contatar">
+                    <main>
+                        <div id="email">
+                            [Email do lab]
+                        </div>
+                    </main>
+                </div>
+            </div>
+        </section>
+        <div id="linha"></div>
+        <aside>
+            <div id="redes">
         
-    </section>
-    <aside>
-        <div id="redes">
-           
-        </div>
-    </aside>
+            </div>
+        </aside>
+    </div>
 
     <footer class="rodape">
         <p>@LabMaker</p>
