@@ -13,39 +13,32 @@
 body{
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
+    background-image: url(../imagens/labbanner01.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 930px ;
+    
 }
 /*Parte do cabeçalho, menu, etc*/
 .cabecalho{
     display: flex;
-    width: auto;
-    height: 246px;
-    justify-content: center;
-    align-items: center;
-    background-image: linear-gradient(to bottom, var(--cor-nav)1%,white);
- 
-}
-.container{
-    width: 760px;
+    margin-top: 27px;
+    justify-content: space-between;
 }
 .logo{
     display: flex;
-    margin-bottom: 80px;
-    
+    margin-left: 35px;
 }
 .active{
-    background-color: var(--cor-act);
-    padding-top: 5px;
-    padding-bottom: 5px;
-    border-radius: 10px;
+    text-decoration: underline;
 }
 .botao_menu{
     display: none;
 }
 .menu{
     display: flex;
-    justify-content: center;
-    align-items: center;
+    margin-top: 20px;
     width: auto;
+    margin-right: 15px;
 }
 .menu ul{
     display: flex;
@@ -54,44 +47,34 @@ body{
 .menu ul li a{
     text-transform: uppercase;
     text-decoration: none;
-    color: black;
+    color: white;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px black;
     padding: 10px 20px;
-    font-size: .8rem;
+    font-size: .86rem;
 }
 .menu ul li a:hover{
-    color: var(--cor-mud);
     text-decoration: underline;
+    background-color: #111e26;
+    transition: 0.9s;
+    border-radius: 5%;
 }
 .menu ul li:hover ul{
-    display: block;
+    display: flex;
 }
 .menu ul li ul{
     position: absolute;
     display: none;
-    background-color: var(--cor-nav);
-    margin-top: 15px;
-    border: 1px solid rgba(214, 12, 12, 0.185);
-}
-.traco{
-    display: flex;
-    justify-content: center;
-    margin-bottom: 28px;
-}
-.traco .container div{
-    width: 70%;
-    height: 3px;
-    background-color:var(--cor-nav);  
+    background-color: white;
+    margin-top: 10px;
 }
 /*Parte da seção, parte "principal"*/
 section#banner{
-    background-image: url(../imagens/labbanner01.jpg);
     width: auto;
-    background-repeat: no-repeat;
-    background-position: center;
     display: flex;
-    justify-content: center;
-    margin-bottom: 35px;
+ /*   box-shadow: 20px -10px 90px 7px black;*/
 }
+
 .imagem-canto{
     position: absolute;
     right: 5%;
@@ -116,29 +99,25 @@ section#banner{
     align-items: center;
 }
 div#agrupamento{
-    
+    height: 700px;
     display: flex;
+    color: white;
     flex-direction: column;
-    justify-content: space-around;
-    margin-bottom: 30px;
-    line-height: 1.4rem;
+    justify-content: center;
+    align-items: center;
+    width: 700px;
+    text-shadow: .8px .8px 3px black;
+    line-height: 2rem;
 }
 div#agrupamento .titulo{
-    width: 330px;
-    text-align: center;
-    line-height: 50px;
-    font-size: 25px;
-    background-color: black;
-    color: white;
-    height: 57px;
+    font-size: 30px;
 }
 div#agrupamento .informacao{
-    font-size: 13px;
-    background-color: white;
-    width: 593px;
+    font-size: 26px;
+    width: 500px;
 }
 div#agrupamento a{
-    color: black;
+    color: white;
     text-decoration: none;
 }
 .titulo1{
@@ -151,41 +130,43 @@ div#agrupamento a{
     padding: 2px;
     font-family: 'Oxygen Mono', monospace;
 }
-div#superior{
-   margin-right: 54px;
-    margin-top:40px ;
-    padding: 10px;
-   
+/*Parte do aside, mensagens secundárias*/
+aside#secundario{
+    height: 941px;
+    background-image: url(../imagens/logo.png);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    font-size: 20px;
+}
+.tracejados div{
+    margin-left: 10px;
+    width: 90%;
+    margin-bottom: 40px;
+    height: 1px;
+    background-color: #111e26;
 }
 div#inferior{
-    background-color: white;
+    margin-top: 100px;
     display: flex;
+    flex-direction: column;
 }
-section#banner div#inferior div{
-    border: 1px solid var(--cor-sombr);
-    flex: 1;
-    padding: 10px;
+div#box_um, div#box_dois, div#box_tres{
+    width: 450px;
+    margin-top: 30px;
+    margin-left: 60px;
+    line-height: 1.9rem;
+}
+div#box_dois{
+    align-self: flex-end;
 }
 /*Parte de baixo, rodapé*/
 .rodape{
-    background-color: var(--cor-rod);
+    background-color: #111e26;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    min-height: 250px;
-    width: auto;
-   
-}
-.rodape p,.rodape a{
     color: white;
-    font-size: 1.2rem;
-}
-.rodape .ir_topo{
-    font-size: 0.9rem;
-    display: flex;
-    align-self: center;
-    text-decoration: underline;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 15px;
     cursor: pointer;
 }
 /*Medias query's*/
