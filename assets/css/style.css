@@ -56,6 +56,7 @@ body{
 .menu ul li a:hover{
     text-decoration: underline;
     background-color: #111e26;
+    color: white;
     transition: 0.9s;
     border-radius: 5%;
 }
@@ -67,6 +68,10 @@ body{
     display: none;
     background-color: white;
     margin-top: 10px;
+    list-style: none;
+}
+.menu ul li ul a{
+    color: black;
 }
 /*Parte da seção, parte "principal"*/
 section#banner{
@@ -158,6 +163,7 @@ div#box_um, div#box_dois, div#box_tres{
 }
 div#box_dois{
     align-self: flex-end;
+    margin-right: 60px;
 }
 /*Parte de baixo, rodapé*/
 .rodape{
@@ -169,58 +175,40 @@ div#box_dois{
     font-size: 15px;
     cursor: pointer;
 }
+.rod_caixa{
+    margin-left: 5px;
+    margin-right: 10px;
+}
 /*Medias query's*/
-@media (max-width:1000px){
-    .cabecalho{
-        width: auto;
-        height: 70vh;
-    }
-    .menu{
-        width: auto;
-    }
+@media (max-width:1074px){
     .menu ul li a{
-        font-size: .8rem;
-    }
-    section#banner{
-        height: 100vh;
-       
+        font-size: .7rem;
     }
     div#agrupamento{
-        width: 100%;
-        align-items: center;
-        
-    }
-    div#superior{
-        width: 500px;
-    }
-    div#inferior{
-        flex-direction: column;
-        width: 500px; 
+        align-items: flex-start;
+        margin-left: 30px;
     }
 }
-@media (max-width:1024px){
-    *{
-        font-size: 13px;
-    }
-    .cabecalho{
-        height: 50vh;
+@media (max-width:1000px){
+    body{
+        background-size: 100% 800px;
     }
     .menu{
         display: flex;
         align-items: flex-start;
-        
     }
     .botao_menu{
         display: flex;
-       
     }
     .menu ul{
-        background-color: var(--cor-nav);
+        opacity: 65%;
+        background-color: #111e26;
+        text-align: center;
         position: absolute;
         display: none;
         flex-direction: column;
         left: 0;
-        margin-top: 0;
+        margin-top: 50px;
         width: 100%;
     }
     .menu ul li{
@@ -229,14 +217,18 @@ div#box_dois{
     .menu ul li ul{
         position: relative;
     }
-    section#banner{
-        height: 600px;
+    
+    div#agrupamento .titulo{
+        font-size: 25px;
     }
-    div#superior, div#inferior{
-        font-size: 10px;
-        width: 500px;
-        margin: 5px;
-        justify-content: space-between;
+    div#agrupamento .informacao{
+        font-size: 21px;
+    }
+    div#inferior{
+        margin-top: 5px;
+    }
+    aside#secundario{
+        background-size: 300px 214px;
     }
     .imagem-canto{
         display: none;
@@ -249,19 +241,32 @@ div#box_dois{
     }
 }
 @media (max-width:520px){
-    *{
-        font-size: 12px;
+    body{
+        background-size: 100% 40.6rem;
     }
-    .cabecalho{
-        height: 324px;
+    div#agrupamento .titulo{
+    font-size: 1rem;
     }
-    section#banner{
-        height: 1000px;
-        
+    div#agrupamento .informacao{
+      font-size: 0.8rem;
+      width: auto;
     }
-    div#superior, div#inferior{
-        width: 20rem;
-        justify-content: space-between;
+    aside#secundario{
+        font-size: 0.7rem;
+    }
+    div#inferior{
+        align-items: center;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    div#box_um, div#box_dois, div#box_tres{
+        flex: 1;
+        width: 80%;
+        margin: 1px;
+    }
+    div#box_dois{
+        align-self: auto;
+        margin-right: 0px;
     }
     .imagem-canto{
         display: none;

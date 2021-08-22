@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Maker Ip</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <!--Bibliotca Aos(Animate on scrol)-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <header class="cabecalho">
@@ -60,7 +62,7 @@
 
     <aside id="secundario">
         <div id="inferior">
-            <div id="box_um">
+            <div id="box_um" data-aos="fade-in">
                 <p>Mas o que é um Lab. Maker? Lab. Maker é uma área de inovação e criação, dentro de centros educacionais (isso inclui universidades), focalizada para alunos transformarem a teoria em prática.</p>
                 <div class="tracejados">
                     <div></div>
@@ -68,14 +70,14 @@
                 </div>
             </div>
            
-            <div id="box_dois">
+            <div id="box_dois" data-aos="fade-in">
                 <p>O que somos e onde ficamos? Bem, em si somos alunos e professores normais... criamos essa página (sem nenhum tipo de fim lucrativo) para mostrar as nossas ideias, encontros, erros e acertos, criações, evoluções etc.</p>
                 <div class="tracejados">
                     <div></div>
                     <div></div>
                 </div>
             </div>
-            <div id="box_tres">
+            <div id="box_tres" data-aos="fade-in">
                 <p>O local onde nosso Lab. se encontra é no instituto federal de educação, ciências e tecnologia rio grande do Norte, Campus Ipanguaçu... Ou simplesmente: IFRN Campus Ipanguaçu. É uma instituição de ensino público 10/10!
                 </p>
                 <div class="tracejados">
@@ -97,5 +99,9 @@
         </div>
     </footer>
     <script src="assets/js/script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 </html>
