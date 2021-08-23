@@ -2,8 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Oxygen+Mono&display=swap');
 :root{
     --cor-nav: #CEE5F2;
-    --cor-act: #2667FF;
-    --cor-rod: #1F0318;
     --cor-sombr: #CECECE;
     --cor-mud: #626C66;
 }
@@ -16,7 +14,6 @@ body{
     background-image: url(../imagens/labbanner01.jpg);
     background-repeat: no-repeat;
     background-size: 100% 930px ;
-    
 }
 /*Parte do cabeçalho, menu, etc*/
 .cabecalho{
@@ -33,7 +30,6 @@ body{
 .active{
     text-decoration: underline;
 }
-
 .botao_menu{
     display: none;
 }
@@ -51,7 +47,6 @@ body{
    right: 10px;
    top: 1px;
    position: absolute;
-  
 }
 .idiomas a{
     padding-right: 5px;
@@ -155,7 +150,6 @@ aside#secundario{
     text-align: justify;
     font-size: 20px;
 }
-
 div#inferior{
     margin-top: 100px;
     display: flex;
@@ -172,8 +166,7 @@ div#box_dois{
     margin-right: 60px;
 }
 /*Parte de baixo, rodapé*/
-.rodape{
-    
+.rodape{   
     background-color: #111e26;
     display: flex;
     color: white;
