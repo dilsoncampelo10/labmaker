@@ -8,11 +8,13 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <style>
         div#cont{
+          
             text-align: center;
             background-color: white;
-            width: 900px;
-            height: 1000px;
+            width: 70%;
+            height: 500px;
         }
+      
     </style>
 </head>
 <body>
@@ -23,25 +25,25 @@
                 <img src="assets/imagens/campus.png" alt="logo maker ip">
             </picture>
         </div>
-        <div class="menu">
-            <nav>
+        
+            <nav class="menu">
                 <div class="botao_menu">
-                    <div class="btn_menu" onclick="mudarMenu()"> 
-                        <picture>
-                            <source media="(max-width: 520px)" srcset="assets/imagens/menu-p.png">
-                            <img src="assets/imagens/menu.png" alt="botão do menu">
-                        </picture>
+                    <div class="btn_menu" onclick="mudarMenu()">
+                            <picture>
+                                <source media="(max-width: 520px)" srcset="assets/imagens/menu-p.png">
+                                <img src="assets/imagens/menu.png" alt="botão do menu">
+                            </picture>
                     </div>
-                </div>
+                 </div>
                 <ul class="lista_menu">
-                    <li><a href="index.html">Home</a></li>
+                    <li class="active"><a href="index.html">Home</a></li>
                     <li><a href="">Divulgação</a>
                         <ul>
                             <li><a href="projeto.html">Projetos</a></li>
                         </ul>
                     </li>
                     <li><a href="tecnico.html">Seção técnica</a></li>
-                    <li class="active"><a href="dicas.html">Blog com dicas</a></li>
+                    <li><a href="dicas.html">Blog com dicas</a></li>
                     <li><a href="noticia.html">Notícias</a></li>
                     <li><a href="">Sobre</a>
                         <ul>
@@ -50,14 +52,14 @@
                     </li>
                 </ul>
             </nav>
-        </div>
+        
     </header>
 
     <section class="meio">
         <div id="cont">
-            .......................................................................
-            <h1>Postagem mais próxima: 06/09</h1>
-            .......................................................................
+            
+            <h1 class="titulo1">Postagem mais próxima: 06/09</h1>
+            
         </div>
        
     </section>
@@ -70,7 +72,7 @@
             <p class="ir_topo" onclick="irTopo()">Ir ao topo</p>
         </div>
         <div class="rod_caixa">
-            <p>[Email lab]</p>
+            <p><a href="mailto:maker.ip@ifrn.edu.br">maker.ip@ifrn.edu.br</a></p>
         </div>
     </footer>
     <script src="assets/js/script.js"></script>

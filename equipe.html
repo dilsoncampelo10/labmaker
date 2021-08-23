@@ -64,34 +64,34 @@
                 <img src="assets/imagens/campus.png" alt="logo maker ip">
             </picture>
         </div>
-        <div class="menu">
-            <nav>
+        
+            <nav class="menu">
                 <div class="botao_menu">
-                    <div class="btn_menu" onclick="mudarMenu()"> 
-                        <picture>
-                            <source media="(max-width: 520px)" srcset="assets/imagens/menu-p.png">
-                            <img src="assets/imagens/menu.png" alt="botão do menu">
-                        </picture>
+                    <div class="btn_menu" onclick="mudarMenu()">
+                            <picture>
+                                <source media="(max-width: 520px)" srcset="assets/imagens/menu-p.png">
+                                <img src="assets/imagens/menu.png" alt="botão do menu">
+                            </picture>
                     </div>
-                </div>
+                 </div>
                 <ul class="lista_menu">
-                    <li><a href="index.html">Home</a></li>
+                    <li class="active"><a href="index.html">Home</a></li>
                     <li><a href="">Divulgação</a>
                         <ul>
-                            <li>&#9679;<a href="projeto.html">Projetos</a></li>
+                            <li><a href="projeto.html">Projetos</a></li>
                         </ul>
                     </li>
                     <li><a href="tecnico.html">Seção técnica</a></li>
                     <li><a href="dicas.html">Blog com dicas</a></li>
-                    <li ><a href="noticia.html">Notícias</a></li>
-                    <li class="active"><a href="">Sobre</a>
+                    <li><a href="noticia.html">Notícias</a></li>
+                    <li><a href="">Sobre</a>
                         <ul>
-                            <li>&#9679;<a href="equipe.html">Equipe</a></li>
+                            <li><a href="equipe.html">Equipes</a></li>
                         </ul>
                     </li>
                 </ul>
             </nav>
-        </div>
+        
     </header>
     
     <section class="meio">
@@ -146,7 +146,7 @@
             <p class="ir_topo" onclick="irTopo()">Ir ao topo</p>
         </div>
         <div class="rod_caixa">
-            <p>[Email lab]</p>
+            <p><a href="mailto:maker.ip@ifrn.edu.br">maker.ip@ifrn.edu.br</a></p>
         </div>
     </footer>
     <script src="assets/js/script.js"></script>

@@ -10,9 +10,6 @@
         body{
             display: flex;
             flex-direction: column;
-            background-image: url(assets/imagens/labbanner02.jpg);
-            background-repeat: no-repeat;
-            background-size: cover;
         }
         div#uniao{
             display: flex;
@@ -47,18 +44,17 @@
                 <img src="assets/imagens/campus.png" alt="logo maker ip">
             </picture>
         </div>
-        <div class="menu">
-            <nav>
+            <nav class="menu">
                 <div class="botao_menu">
-                    <div class="btn_menu" onclick="mudarMenu()"> 
-                        <picture>
-                            <source media="(max-width: 520px)" srcset="assets/imagens/menu-p.png">
-                            <img src="assets/imagens/menu.png" alt="botão do menu">
-                        </picture>
+                    <div class="btn_menu" onclick="mudarMenu()">
+                            <picture>
+                                <source media="(max-width: 520px)" srcset="assets/imagens/menu-p.png">
+                                <img src="assets/imagens/menu.png" alt="botão do menu">
+                            </picture>
                     </div>
-                </div>
+                 </div>
                 <ul class="lista_menu">
-                    <li><a href="index.html">Home</a></li>
+                    <li class="active"><a href="index.html">Home</a></li>
                     <li><a href="">Divulgação</a>
                         <ul>
                             <li><a href="projeto.html">Projetos</a></li>
@@ -66,7 +62,7 @@
                     </li>
                     <li><a href="tecnico.html">Seção técnica</a></li>
                     <li><a href="dicas.html">Blog com dicas</a></li>
-                    <li class="active"><a href="noticia.html">Notícias</a></li>
+                    <li><a href="noticia.html">Notícias</a></li>
                     <li><a href="">Sobre</a>
                         <ul>
                             <li><a href="equipe.html">Equipes</a></li>
@@ -74,40 +70,29 @@
                     </li>
                 </ul>
             </nav>
-        </div>
+        
     </header>
 
-    <div id="uniao" class="contorno">
-        <section id="cont">
-            <div id="conjemail">
-                <div id="title">
-                    <h1 class="titulo1">Contato</h1>
-                    <p class="titulo2">Para qualquer dúvida, problema ou informação, nos comunique pelo E-mail abaixo:</p>
+    <section class="meio">
+        <div id="uniao" class="contorno">
+            <section id="cont">
+                <div id="conjemail">
+                    <div id="title">
+                        <h1 class="titulo1">Notícias</h1>
+                        <p class="titulo2">Confira abaixo notícias sobre o LabMaker</p>
+                    </div>
+                    <div id="contatar">
+                        <main>
+                            <div class="noticia">
+                                
+                            </div>
+                        </main>
+                    </div>
                 </div>
-                <div id="contatar">
-                    <main>
-                        <div id="email">
-                            [Email do lab]
-                        </div>
-                    </main>
-                </div>
-            </div>
-        </section>
-        <div id="linha"></div>
-        <aside>
-            <div id="redes">
-                <div>
-                    <h1 class="titulo1">Redes sociais</h1>
-                    <p class="titulo2">Acompanhe as redes sociais do Maker Ip</p>
-                </div>
-                <div>
-                    <ul>
-                        <li>Instragram</li>
-                    </ul>
-                </div>
-            </div>
-        </aside>
-    </div>
+            </section>
+            <div id="linha"></div>
+        </div>
+    </section>
 
     <footer class="rodape">
         <div class="rod_caixa">
@@ -117,7 +102,7 @@
             <p class="ir_topo" onclick="irTopo()">Ir ao topo</p>
         </div>
         <div class="rod_caixa">
-            <p>[Email lab]</p>
+            <p><a href="mailto:maker.ip@ifrn.edu.br">maker.ip@ifrn.edu.br</a></p>
         </div>
     </footer>
     <script src="assets/js/script.js"></script>

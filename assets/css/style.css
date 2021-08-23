@@ -33,6 +33,7 @@ body{
 .active{
     text-decoration: underline;
 }
+
 .botao_menu{
     display: none;
 }
@@ -90,10 +91,12 @@ section#banner{
     width: auto;
 }
 .meio{
+    border-top: 1px solid #111e26;
     background-image: url(../imagens/labbanner02.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
+    margin-top: 30px;
     height: auto;
     width: auto;
     flex-direction: column;
@@ -181,6 +184,10 @@ div#box_dois{
     max-width: 1440px;
     margin: auto;
 }
+.rodape a{
+    color: white;
+    text-decoration: none;
+}
 /*Medias query's*/
 @media (max-width:1074px){
     .menu ul li a{
@@ -205,7 +212,7 @@ div#box_dois{
         cursor: pointer;
     }
     .menu ul{
-        opacity: 65%;
+        opacity: 75%;
         background-color: #111e26;
         text-align: center;
         position: absolute;
@@ -274,8 +281,8 @@ div#box_dois{
         align-self: auto;
         margin-right: 0px;
     }
-    .imagem-canto{
-        display: none;
+    .rodape{
+        font-size: 10px;
     }
     .titulo1{
         font-size: 1.5rem;

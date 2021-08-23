@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Seção técnica</title>
     <link rel="stylesheet" href="assets/css/style.css">
+     <!--Bibliotca Aos(Animate on scrol)-->
+     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <style>
         section{
             display: flex;
@@ -49,24 +51,23 @@
                 <img src="assets/imagens/campus.png" alt="logo maker ip">
             </picture>
         </div>
-        <div class="menu">
-            <nav>
+            <nav class="menu">
                 <div class="botao_menu">
-                    <div class="btn_menu" onclick="mudarMenu()"> 
-                        <picture>
-                            <source media="(max-width: 520px)" srcset="assets/imagens/menu-p.png">
-                            <img src="assets/imagens/menu.png" alt="botão do menu">
-                        </picture>
+                    <div class="btn_menu" onclick="mudarMenu()">
+                            <picture>
+                                <source media="(max-width: 520px)" srcset="assets/imagens/menu-p.png">
+                                <img src="assets/imagens/menu.png" alt="botão do menu">
+                            </picture>
                     </div>
-                </div>
+                 </div>
                 <ul class="lista_menu">
-                    <li><a href="index.html">Home</a></li>
+                    <li class="active"><a href="index.html">Home</a></li>
                     <li><a href="">Divulgação</a>
                         <ul>
                             <li><a href="projeto.html">Projetos</a></li>
                         </ul>
                     </li>
-                    <li class="active"><a href="tecnico.html">Seção técnica</a></li>
+                    <li><a href="tecnico.html">Seção técnica</a></li>
                     <li><a href="dicas.html">Blog com dicas</a></li>
                     <li><a href="noticia.html">Notícias</a></li>
                     <li><a href="">Sobre</a>
@@ -76,7 +77,7 @@
                     </li>
                 </ul>
             </nav>
-        </div>
+        
     </header>
     
     <section class="meio">
@@ -84,12 +85,12 @@
         <div id="conteudo" class="contorno">
             <div class="titulo">
                 <hgroup>
-                    <h1 class="titulo1">Equipamentos</h1>
-                    <h2 class="titulo2">Confira abaixo os equipamentos que fazem parte do Maker Ip</h2>
+                    <h1 class="titulo1" data-aos="fade-right">Equipamentos</h1>
+                    <h2 class="titulo2"data-aos="fade-right">Confira abaixo os equipamentos que fazem parte do Maker Ip</h2>
                 </hgroup>
             </div>
             <div class="listas">
-                <ul>
+                <ul data-aos="zoom-in">
                     <li><h3>Impressoras 3D de pequeno porte</h3></li>
                     <li><h3>Impressoras 3D de médio porte</h3></li>
                     <li><h3>Canetas 3D</h3></li>
@@ -108,12 +109,12 @@
             </div>
             <div class="titulo">
                 <hgroup>
-                    <h1 class="titulo1">Softawares</h1>
-                    <h2 class="titulo2">Confira abaixo os softwares que estão instalados nos computadores do Maker Ip</h2>
+                    <h1 class="titulo1" data-aos="fade-right">Softawares</h1>
+                    <h2 class="titulo2" data-aos="fade-right">Confira abaixo os softwares que estão instalados nos computadores do Maker Ip</h2>
                 </hgroup>
             </div>
             <div class="listas">
-                <ul>
+                <ul data-aos="zoom-in">
                     <li><h3><a href="https://www.blender.org/" target="_blank">Blender &#x1F517;</a></h3></li>
                     <li><h3><a href="https://www.arduino.cc/en/software" target="_blank">Arduino software/IDE &#x1F517;</a></h3></li>
                     <li><h3><a href="https://www.gimp.org/" target="_blank">Gimp &#x1F517;</a></h3></li>
@@ -141,9 +142,13 @@
             <p class="ir_topo" onclick="irTopo()">Ir ao topo</p>
         </div>
         <div class="rod_caixa">
-            <p>[Email lab]</p>
+            <p><a href="mailto:maker.ip@ifrn.edu.br">maker.ip@ifrn.edu.br</a></p>
         </div>
     </footer>
     <script src="assets/js/script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 </html>
