@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        section#projetos{
+            max-height: auto;
+            margin-top: 40px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;   
+        }
+        div#conjunto{
+            border: 1px solid #cecece;
+            display: flex;
+            width: 70%;
+            flex-direction: column;
+            align-items: center;
+            padding-bottom: 10px;
+        }
+        table{
+            max-width: auto;
+            max-height: auto;
+        }
+         tr, td, th{
+            border: 1px solid black;
+            padding: 10px;
+        }
+        div#definido{
+            width: 80%;
+        }
+        div#titulo{
+            margin-bottom: 50px;
+            width: 80%;
+        }
+        thead{
+            background-color: var(--cor-rod);
+            color: white;
+        }
+        
+        @media(max-width:1024px){
+            table, tr,td, th{
+                font-size: 8px;
+            }
+            div#conjunto{    
+                width: auto;
+            }
+        }
+        
+        @media(max-width:520px){
+            table, tr,td, th{
+                font-size: 4px;
+            }
+           
+        }
+    </style>
+</head>
+<body>
+    <header class="cabecalho">
+        <div class="logo">
+            <picture>
+                <source media="(max-width: 520px)" srcset="assets/imagens/campus-p.png">
+                <img src="assets/imagens/campus.png" alt="logo maker ip">
+            </picture>
+        </div>
+            <nav class="menu">
+                <div class="botao_menu">
+                    <div class="btn_menu" onclick="mudarMenu()">
+                            <picture>
+                                <source media="(max-width: 520px)" srcset="assets/imagens/menu-p.png">
+                                <img src="assets/imagens/menu.png" alt="botão do menu">
+                            </picture>
+                    </div>
+                 </div>
+                <ul class="lista_menu">
+                    <li class="active"><a href="homeng.html">Home</a></li>
+                    <li><a href="">Disclosure</a>
+                        <ul>
+                            <li><a href="project.html">Projects</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="tech.html">Technical section</a></li>
+                    <li><a href="tips.html">Blog with tips
+                    </a></li>
+                    <li><a href="news.html">News</a></li>
+                    <li><a href="">About</a>
+                        <ul>
+                            <li><a href="teams.html">Teams
+                            </a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        
+</header>
+    
+    <section id="projetos" class="meio">
+    
+        <div id="conjunto" class="contorno">
+            <div id="titulo">
+                <h1 class="titulo1">Research project</h1>
+                <p>Due to the variety of possibilities provided by Maker Ip, some projects can be carried out, check some of them below:</p>
+            </div>
+            <div id="definido">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Title</th>
+                            <th>Notice</th>
+                            <th>Summary</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Development of prototypes for teaching math to the visually impaired</td>
+                            <td>Public notice no 04/2020 - PROPI/RE/IFRN - Research and Innovation Projects with Development - Research Notice</td>
+                            <td>The advancement of technology has allowed the creation of increasingly
+                            sophisticated electronic devices. In parallel and also asa result of this
+                            progress, knowledge has become increasingly widespreadand a reflection
+                            of this reality is the maker culture and the "Do ItYourself" movement.
+                            These movements propagated various ideas andtechnologies, such as 3D
+                            printing and the use of computer numerical controlrouters. In an organic
+                            way, these devices were applied to the classroom context,seeking to
+                            mitigate learning difficulties and enable the integrationand development
+                            of students. This project seeks to develop devices thathelp teaching math
+                            to students with visual impairments or low vision. Wehope to have as
+                            results, devices, scripts and lesson plans. In case of apositive result in the
+                            validation stage, it is expected to produce kits anddonate to municipal
+                            schools in the municipality of Ipanguaçu.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <footer class="rodape">
+        <div class="rod_caixa">
+            <p>&copy; LabMaker</p>
+        </div>
+        <div class="rod_caixa">
+            <p class="ir_topo" onclick="irTopo()">Ir ao topo</p>
+        </div>
+        <div class="rod_caixa">
+            <p><a href="mailto:maker.ip@ifrn.edu.br">maker.ip@ifrn.edu.br</a></p>
+        </div>
+    </footer>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

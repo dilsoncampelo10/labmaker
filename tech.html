@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seção técnica</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+     <!--Bibliotca Aos(Animate on scrol)-->
+     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        section{
+            display: flex;
+            justify-content: center;
+        }
+        #conteudo{
+            padding: 10px;
+            width: 80%;
+            display: flex;
+            align-items:  flex-start;
+            flex-direction: column;
+        }
+        .listas{
+            margin-left: 30px;
+        }
+        .listas ul li{
+            font-size: 0.9rem;
+            line-height: 2rem;
+        }
+        .listas a{
+            color: black;
+            text-decoration: none;
+        }
+        @media(max-width:987px){
+            .imagem-canto{
+                display: none;
+            }
+            #conteudo{
+                width: auto;
+               
+            }
+        }
+       
+    </style>
+</head>
+<body>
+    <header class="cabecalho">
+        <div class="logo">
+            <picture>
+                <source media="(max-width: 520px)" srcset="assets/imagens/campus-p.png">
+                <img src="assets/imagens/campus.png" alt="logo maker ip">
+            </picture>
+        </div>
+            <nav class="menu">
+                <div class="botao_menu">
+                    <div class="btn_menu" onclick="mudarMenu()">
+                            <picture>
+                                <source media="(max-width: 520px)" srcset="assets/imagens/menu-p.png">
+                                <img src="assets/imagens/menu.png" alt="botão do menu">
+                            </picture>
+                    </div>
+                 </div>
+                <ul class="lista_menu">
+                    <li class="active"><a href="homeng.html">Home</a></li>
+                    <li><a href="">Disclosure</a>
+                        <ul>
+                            <li><a href="project.html">Projects</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="tech.html">Technical section</a></li>
+                    <li><a href="tips.html">Blog with tips
+                    </a></li>
+                    <li><a href="news.html">News</a></li>
+                    <li><a href="">About</a>
+                        <ul>
+                            <li><a href="teams.html">Teams
+                            </a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        
+</header>
+    
+    <section class="meio">
+      
+        <div id="conteudo" class="contorno">
+            <div class="titulo">
+                <hgroup>
+                    <h1 class="titulo1" data-aos="fade-right">Equipments:</h1>
+                    <h2 class="titulo2"data-aos="fade-right">Check below the equipment that is part of Maker Ip
+                    </h2>
+                </hgroup>
+            </div>
+            <div class="listas">
+                <ul data-aos="zoom-in">
+                    <li><h3>Small 3D Printers</h3></li>
+                    <li><h3>Midsize 3D Printers</h3></li>
+                    <li><h3>3D pens</h3></li>
+                    <li><h3>Notebooks</h3></li>
+                    <li><h3>SmartTv</h3></li>
+                    <li><h3>Toolkit</h3></li>
+                    <li><h3>Screwdrivers/Drills</h3></li>
+                    <li><h3>Tico saw</h3></li>
+                    <li><h3>Orbital sander</h3></li>
+                    <li><h3>Arduino/Robotics Kit</h3></li>
+                    <li><h3>Lego Robotics Kit</h3></li>
+                    <li><h3>Multimedia projector</h3></li>
+                    <li><h3>CNC Laser Machine</h3></li>
+                    <li><h3>3D Scanner</h3></li>
+                </ul>
+            </div>
+            <div class="titulo">
+                <hgroup>
+                    <h1 class="titulo1" data-aos="fade-right">Softawares</h1>
+                    <h2 class="titulo2" data-aos="fade-right">Check below the software that are installed on Maker Ip computers</h2>
+                </hgroup>
+            </div>
+            <div class="listas">
+                <ul data-aos="zoom-in">
+                    <li><h3><a href="https://www.blender.org/" target="_blank">Blender &#x1F517;</a></h3></li>
+                    <li><h3><a href="https://www.arduino.cc/en/software" target="_blank">Arduino software/IDE &#x1F517;</a></h3></li>
+                    <li><h3><a href="https://www.gimp.org/" target="_blank">Gimp &#x1F517;</a></h3></li>
+                    <li><h3><a href="https://www.audacityteam.org/download/" target="_blank">Audacity &#x1F517;</a></h3></li>
+                    <li><h3><a href="https://mixxx.org/" target="_blank">Mixxx &#x1F517;</a></h3></li>
+                    <li><h3><a href="https://kdenlive.org/en/" target="_blank">Kdenlive &#x1F517;</a></h3></li>
+                    <li><h3><a href="https://krita.org/en/" target="_blank">Krita &#x1F517;</a></h3></li>
+                    <li><h3><a href="https://inkscape.org/pt-br/release/inkscape-1.1/" target="_blank">InkSkape &#x1F517;</a></h3></li>
+                    <li><h3><a href="https://www.sublimetext.com/" target="_blank">Sublime Text &#x1F517;</a></h3></li>
+                    <li><h3><a href="https://notepad-plus-plus.org/downloads/" target="_blank">NotePadd++ &#x1F517;</a></h3></li>
+                    <li><h3><a href="https://unity.com/" target="_blank">Unity &#x1F517;</a></h3></li>
+                    <li><h3><a href="https://godotengine.org/download" target="_blank">Godot Engine &#x1F517;</a></h3></li>
+                    <li><h3><a href="https://netbeans.apache.org/download/index.html" target="_blank">NetBeans &#x1F517;</a></h3></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+   
+
+    <footer class="rodape">
+        <div class="rod_caixa">
+            <p>&copy; LabMaker</p>
+        </div>
+        <div class="rod_caixa">
+            <p class="ir_topo" onclick="irTopo()">Move up
+            </p>
+        </div>
+        <div class="rod_caixa">
+            <p><a href="mailto:maker.ip@ifrn.edu.br">maker.ip@ifrn.edu.br</a></p>
+        </div>
+    </footer>
+    <script src="assets/js/script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
+</body>
+</html>

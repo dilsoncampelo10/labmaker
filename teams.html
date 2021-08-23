@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equipes</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/sobre.css">
+    <style>
+        main#principal{
+            background-color: white;
+            padding: 10px;
+            width: 70%;
+            display: flex;
+            flex-direction: column;
+            margin-top: 20px;
+        }
+        #cont{
+            width: 70%;
+        }
+        div#tit_principal{
+            flex: 1;
+        }
+        section#area_cont{
+            flex: 2;
+        }
+        .caixa{
+            border: 1px solid var(--cor-sombr);
+            flex-direction: row;
+            display: flex;
+            padding: 5px;
+            margin-bottom: 50px;
+            width: 70%;
+        }
+        .caixa img{
+            margin-right: 10px;
+        }
+        @media (max-width:789px){
+            .caixa{
+                width: 100%;
+            }
+            .caixa img, p{
+                height: 100px;
+                font-size:10px;
+            }
+          
+        }
+        @media (max-width:380px){
+           
+            .caixa img, p{
+                height: 70px;
+                font-size:7px;
+            }
+          
+        }
+    </style>
+</head>
+<body>
+    <header class="cabecalho">
+        <div class="logo">
+            <picture>
+                <source media="(max-width: 520px)" srcset="assets/imagens/campus-p.png">
+                <img src="assets/imagens/campus.png" alt="logo maker ip">
+            </picture>
+        </div>
+            <nav class="menu">
+                <div class="botao_menu">
+                    <div class="btn_menu" onclick="mudarMenu()">
+                            <picture>
+                                <source media="(max-width: 520px)" srcset="assets/imagens/menu-p.png">
+                                <img src="assets/imagens/menu.png" alt="botão do menu">
+                            </picture>
+                    </div>
+                 </div>
+                <ul class="lista_menu">
+                    <li class="active"><a href="homeng.html">Home</a></li>
+                    <li><a href="">Disclosure</a>
+                        <ul>
+                            <li><a href="project.html">Projects</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="tech.html">Technical section</a></li>
+                    <li><a href="tips.html">Blog with tips
+                    </a></li>
+                    <li><a href="news.html">News</a></li>
+                    <li><a href="">About</a>
+                        <ul>
+                            <li><a href="teams.html">Teams
+                            </a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        
+</header>
+    
+    <section class="meio">
+        <div id="cont" class="contorno">
+        
+            <main id="principal">
+                <div id="tit_principal">
+                    <h1 class="titulo1">Team</h1>
+                    <h2 class="titulo2">The Maker ip project has the following people below</h2>
+                </div>
+                <section id="area_cont">
+                    <h1>Adriano Soares</h1>
+                    <div class="caixa">
+                        <img src="assets/imagens/adriano.jpg" alt="foto de adriano">
+                        <p>He holds a Full Degree in Biology and Mathematics from the Faculty of Teacher Training of Belo Jardim (1993 and 1996).</p>
+                    </div>
+                    <h1>Dilson Campêlo</h1>
+                    <div class="caixa">
+                        <img src="assets/imagens/dilson.jpg" alt="foto de dilson">
+                        <p>Student of the integrated technical course in computing at IFRN (2019), web developer.</p>
+                    </div>
+                    <h1>Ismael Vitor</h1>
+                    <div class="caixa">
+                        <img src="assets/imagens/ismael.jpeg" alt="foto de ismael">
+                        <p>Student of the integrated technical course in computing at IFRN(2019), game developer.</p>
+                    </div>
+                    <h1>Jefferson Silva</h1>
+                    <div class="caixa">
+                        <img src="assets/imagens/jeff.jpeg" alt="foto de jefferson">
+                        <p>Teacher of networks at the Federal Institute of Education, Science and Technology of Rio Grande do Norte (IFRN).</p>
+                    </div>
+                    <h1>Kassio Roberto</h1>
+                    <div class="caixa">
+                        <img src="assets/imagens/kassio.jpg" alt="foto de kassio">
+                        <p>English Language Teacher at the Federal Institute of Education, Science and Technology of Rio Grande do Norte (IFRN).</p>
+                    </div>
+                    <h1>Ozanira Soares</h1>
+                    <div class="caixa">
+                        <img src="assets/imagens/ozanira.jpeg" alt="foto de ozanira">
+                        <p>Graduated in Chemistry from the State University of Rio Grande do Norte(2006). She is currently a Laboratory Technician at IFRN - Campus Ipanguaçu.</p>
+                    </div>
+        </div>
+            </section>
+        </main>
+    </section>
+
+    <footer class="rodape">
+        <div class="rod_caixa">
+            <p>&copy; LabMaker</p>
+        </div>
+        <div class="rod_caixa">
+            <p class="ir_topo" onclick="irTopo()">Move up
+            </p>
+        </div>
+        <div class="rod_caixa">
+            <p><a href="mailto:maker.ip@ifrn.edu.br">maker.ip@ifrn.edu.br</a></p>
+        </div>
+    </footer>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

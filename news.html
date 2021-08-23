@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fale conosco</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        div#uniao{
+            display: flex;
+            align-self: center;
+            flex-direction: column;
+            text-align: center;
+            height: 150vh;
+            width: 800px;
+            
+        }
+        #linha{
+            width: 100%;
+            height: 2px;
+            background-color: var(--cor-mud);
+        }
+        #title{
+           margin-bottom: 30px;
+        }
+        #contatar{
+            border: 1px solid black;
+            width: 50%;
+            height: 20vh;
+            margin-bottom: 20px;
+        }
+        @media(max-width:895px){
+            div#uniao{
+                width: auto;
+            }
+        }
+      
+    </style>
+</head>
+<body>
+    <header class="cabecalho">
+        <div class="logo">
+            <picture>
+                <source media="(max-width: 520px)" srcset="assets/imagens/campus-p.png">
+                <img src="assets/imagens/campus.png" alt="logo maker ip">
+            </picture>
+        </div>
+            <nav class="menu">
+                <div class="botao_menu">
+                    <div class="btn_menu" onclick="mudarMenu()">
+                            <picture>
+                                <source media="(max-width: 520px)" srcset="assets/imagens/menu-p.png">
+                                <img src="assets/imagens/menu.png" alt="botão do menu">
+                            </picture>
+                    </div>
+                 </div>
+                <ul class="lista_menu">
+                    <li class="active"><a href="homeng.html">Home</a></li>
+                    <li><a href="">Disclosure</a>
+                        <ul>
+                            <li><a href="project.html">Projects</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="tech.html">Technical section</a></li>
+                    <li><a href="tips.html">Blog with tips
+                    </a></li>
+                    <li><a href="news.html">News</a></li>
+                    <li><a href="">About</a>
+                        <ul>
+                            <li><a href="teams.html">Teams
+                            </a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        
+</header>
+
+    <section class="meio">
+        <div id="uniao" class="contorno">
+            <section id="cont">
+                <div id="conjemail">
+                    <div id="title">
+                        <h1 class="titulo1">News</h1>
+                        <p class="titulo2">Check out news about LabMaker below
+                        </p>
+                    </div>
+                    <div id="contatar">
+                        <main>
+                            <div class="noticia">
+                                <h3>[News soon]</h3>
+                            </div>
+                        </main>
+                    </div>
+                </div>
+            </section>
+            <div id="linha"></div>
+        </div>
+    </section>
+
+    <footer class="rodape">
+        <div class="rod_caixa">
+            <p>&copy; LabMaker</p>
+        </div>
+        <div class="rod_caixa">
+            <p class="ir_topo" onclick="irTopo()">Move up
+            </p>
+        </div>
+        <div class="rod_caixa">
+            <p><a href="mailto:maker.ip@ifrn.edu.br">maker.ip@ifrn.edu.br</a></p>
+        </div>
+    </footer>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

@@ -55,6 +55,7 @@ body{
 }
 .idiomas a{
     padding-right: 5px;
+    padding-left: 5px;
 }
 .menu ul li a{
     text-transform: uppercase;
@@ -85,32 +86,11 @@ body{
 .menu ul li ul a{
     color: black;
 }
-
 /*Parte da seção, parte "principal"*/
 section#banner{
     margin: auto;
     display: flex;
     max-width: 1440px;
-}
-.contorno{
-    border: 1px solid var(--cor-sombr);
-    box-shadow: 0px 0px 10px var(--cor-sombr);
-    padding: 0px 50px;
-    background-color: white;
-    width: auto;
-}
-.meio{
-    border-top: 1px solid #111e26;
-    background-image: url(../imagens/labbanner02.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    margin-top: 30px;
-    height: auto;
-    width: auto;
-    flex-direction: column;
-    justify-content: start;
-    align-items: center;
 }
 div#agrupamento{
     height: 700px;
@@ -119,6 +99,7 @@ div#agrupamento{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: justify;
     width: 700px;
     text-shadow: .8px .8px 3px black;
     line-height: 2rem;
@@ -133,6 +114,25 @@ div#agrupamento .informacao{
 div#agrupamento a{
     color: white;
     text-decoration: none;
+}
+/*Para outras páginas*/
+.meio{
+    background-image: linear-gradient(to bottom, #111e26, #0f1f2b, #23323d,#59646c, #92999f,#c0c4c7, white);
+    border-top: 1px solid black;
+    display: flex;
+    margin-top: 30px;
+    height: auto;
+    width: auto;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+.contorno{
+    border: 1px solid var(--cor-sombr);
+    box-shadow: 0px 0px 10px var(--cor-sombr);
+    padding: 0px 50px;
+    background-color: white;
+    width: auto;
 }
 .titulo1{
     font-family: 'Oxygen Mono', monospace;
@@ -149,18 +149,13 @@ aside#secundario{
     max-width: 1440px;
     margin: auto;
     height: 941px;
-    background-image: url(../imagens/logo.png);
+    background-image: url(../imagens/CCL.png);
     background-repeat: no-repeat;
     background-position: bottom right;
+    text-align: justify;
     font-size: 20px;
 }
-.tracejados div{
-    margin-left: 10px;
-    width: 90%;
-    margin-bottom: 40px;
-    height: 1px;
-    background-color: #111e26;
-}
+
 div#inferior{
     margin-top: 100px;
     display: flex;
