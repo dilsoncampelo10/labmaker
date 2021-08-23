@@ -20,9 +20,11 @@ body{
 }
 /*Parte do cabeçalho, menu, etc*/
 .cabecalho{
+    margin: auto;
     display: flex;
     margin-top: 27px;
     justify-content: space-between;
+    max-width: 1440px;
 }
 .logo{
     display: flex;
@@ -73,17 +75,12 @@ body{
 .menu ul li ul a{
     color: black;
 }
+
 /*Parte da seção, parte "principal"*/
 section#banner{
-    width: auto;
+    margin: auto;
     display: flex;
- /*   box-shadow: 20px -10px 90px 7px black;*/
-}
-
-.imagem-canto{
-    position: absolute;
-    right: 5%;
-    top: 100%;
+    max-width: 1440px;
 }
 .contorno{
     border: 1px solid var(--cor-sombr);
@@ -137,6 +134,8 @@ div#agrupamento a{
 }
 /*Parte do aside, mensagens secundárias*/
 aside#secundario{
+    max-width: 1440px;
+    margin: auto;
     height: 941px;
     background-image: url(../imagens/logo.png);
     background-repeat: no-repeat;
@@ -167,6 +166,7 @@ div#box_dois{
 }
 /*Parte de baixo, rodapé*/
 .rodape{
+    
     background-color: #111e26;
     display: flex;
     color: white;
@@ -178,6 +178,8 @@ div#box_dois{
 .rod_caixa{
     margin-left: 5px;
     margin-right: 10px;
+    max-width: 1440px;
+    margin: auto;
 }
 /*Medias query's*/
 @media (max-width:1074px){
@@ -196,9 +198,11 @@ div#box_dois{
     .menu{
         display: flex;
         align-items: flex-start;
+        
     }
     .botao_menu{
         display: flex;
+        cursor: pointer;
     }
     .menu ul{
         opacity: 65%;
@@ -217,7 +221,6 @@ div#box_dois{
     .menu ul li ul{
         position: relative;
     }
-    
     div#agrupamento .titulo{
         font-size: 25px;
     }
@@ -243,6 +246,9 @@ div#box_dois{
 @media (max-width:520px){
     body{
         background-size: 100% 40.6rem;
+    }
+    div#agrupamento{
+        height: 600px;
     }
     div#agrupamento .titulo{
     font-size: 1rem;

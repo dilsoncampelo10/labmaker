@@ -6,6 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog com dicas</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        div#cont{
+            text-align: center;
+            background-color: white;
+            width: 900px;
+            height: 1000px;
+        }
+    </style>
 </head>
 <body>
     <header class="cabecalho">
@@ -34,7 +42,7 @@
                     </li>
                     <li><a href="tecnico.html">Seção técnica</a></li>
                     <li class="active"><a href="dicas.html">Blog com dicas</a></li>
-                    <li><a href="contato.html">Fale conosco</a></li>
+                    <li><a href="noticia.html">Notícias</a></li>
                     <li><a href="">Sobre</a>
                         <ul>
                             <li><a href="equipe.html">Equipes</a></li>
@@ -45,10 +53,25 @@
         </div>
     </header>
 
+    <section class="meio">
+        <div id="cont">
+            .......................................................................
+            <h1>Postagem mais próxima: 06/09</h1>
+            .......................................................................
+        </div>
+       
+    </section>
 
     <footer class="rodape">
-        <p>@LabMaker</p>
-        <p class="ir_topo" onclick="irTopo()">Ir para o topo</p>
+        <div class="rod_caixa">
+            <p>&copy; LabMaker</p>
+        </div>
+        <div class="rod_caixa">
+            <p class="ir_topo" onclick="irTopo()">Ir ao topo</p>
+        </div>
+        <div class="rod_caixa">
+            <p>[Email lab]</p>
+        </div>
     </footer>
     <script src="assets/js/script.js"></script>
 </body>
