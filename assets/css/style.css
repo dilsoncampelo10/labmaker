@@ -47,6 +47,15 @@ body{
     display: flex;
     list-style: none;
 }
+.idiomas{
+   right: 10px;
+   top: 1px;
+   position: absolute;
+  
+}
+.idiomas a{
+    padding-right: 5px;
+}
 .menu ul li a{
     text-transform: uppercase;
     text-decoration: none;

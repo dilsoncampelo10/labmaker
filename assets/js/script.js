@@ -1,3 +1,4 @@
+//Função para scrol suave
 function irTopo(){
     window.scrollTo({
         top: 0,
@@ -5,6 +6,7 @@ function irTopo(){
     }
     )
 }
+//Função para menu mobile
 function mudarMenu(){
     let menu = document.querySelector(".lista_menu")
    
@@ -16,3 +18,6 @@ function mudarMenu(){
        
     }
 }
+
+
+
